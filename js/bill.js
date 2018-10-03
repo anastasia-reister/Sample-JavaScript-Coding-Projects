@@ -2,6 +2,7 @@ var total = 0;
 
 
 	function bill(){
+		cancelValues();
 		size();
 		veggies();
 		meats();
@@ -151,6 +152,10 @@ var total = 0;
 				document.getElementById('card2').reset();
 				document.getElementById('card3').reset();
 				document.getElementById('card4').reset();
+				document.getElementById('meats-price').innerHTML = " ";
+				document.getElementById('meats-checked').innerHTML =" ";
+				document.getElementById('veggies-price').innerHTML = " ";
+				document.getElementById('veggies-checked').innerHTML =" ";
 				
 			};
 
@@ -159,6 +164,7 @@ var total = 0;
 				document.getElementById('meats-checked').innerHTML =" ";
 				document.getElementById('veggies-price').innerHTML = " ";
 				document.getElementById('veggies-checked').innerHTML =" ";
+			
 
 				}
 			
