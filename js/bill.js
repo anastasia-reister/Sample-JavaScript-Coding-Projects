@@ -18,13 +18,13 @@ var total = 0;
 		var size = document.querySelector('input[name = "size"]:checked').value; 
 		
 		if (size == "personal") {
-			sizeTotal = 10;
+			sizeTotal = 6;
 		} else if (size == "medium") {
-			sizeTotal = 20;
+			sizeTotal = 10;
 		} else if (size == "large") {
-			sizeTotal = 30;
-		}else if (size == "extra-large") {
-			sizeTotal = 40;
+			sizeTotal = 14;
+		}else if (size == "extra large") {
+			sizeTotal = 16;
 		};
 
 		document.getElementById('size-price').innerHTML = "$ " + parseFloat(sizeTotal).toFixed(2);
